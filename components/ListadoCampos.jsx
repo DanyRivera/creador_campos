@@ -10,8 +10,8 @@ const ListadoCampos = ({ campos }) => {
 
                     {campo.name == "name" && (
                         <div
-                            key={campo.id}
                             className={styles.campo}
+                            key={campo.id}
                         >
                             <label>{campo.label}:</label>
                             <input type={campo.type} placeholder="Your Name" />
@@ -21,6 +21,7 @@ const ListadoCampos = ({ campos }) => {
                     {campo.name == "email" && (
                         <div
                             className={styles.campo}
+                            key={campo.id}
                         >
                             <label>{campo.label}:</label>
                             <input type={campo.type} placeholder="Your Email" />
@@ -30,12 +31,13 @@ const ListadoCampos = ({ campos }) => {
                     {campo.name == "age" && (
                         <div
                             className={styles.campo}
+                            key={campo.id}
                         >
                             <label>{campo.label}:</label>
 
                             <select name={campo.name}>
                                 {campo.options.map(option => (
-                                    <option value={option}>{option}</option>
+                                    <option key={option} value={option}>{option}</option>
                                 ))}
                             </select>
                         </div>
@@ -45,6 +47,7 @@ const ListadoCampos = ({ campos }) => {
 
                         <fieldset
                             className={styles.seccionPaises}
+                            key={campo.id}
                         >
                             <legend>Select Your Country</legend>
 
@@ -52,14 +55,12 @@ const ListadoCampos = ({ campos }) => {
                                 className={styles.paises}
                             >
                                 {campo.options.map(option => (
-                                    <div>
+                                    <div key={option}>
                                         <input type={campo.type} />
                                         <label>{option}</label>
                                     </div>
                                 ))}
                             </div>
-
-
 
                         </fieldset>
 
