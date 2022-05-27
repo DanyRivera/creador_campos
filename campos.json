@@ -1,0 +1,36 @@
+[
+    {
+        "name": "name",
+        "type": "text",
+        "label": "Name",
+        "id": 1
+    },
+    {
+        "name": "email",
+        "type": "email",
+        "label": "Email",
+        "id": 2
+    },
+    {
+        "name": "age",
+        "type": "select",
+        "label": "Ege",
+        "options": [
+            "-18",
+            "+18"
+        ],
+        "id": 3
+    },
+    {
+        "name": "country",
+        "type": "radio",
+        "label": "Country",
+        "options": [
+            "Mexico",
+            "United States",
+            "Canada",
+            "España"
+        ],
+        "id": 4
+    }
+]
